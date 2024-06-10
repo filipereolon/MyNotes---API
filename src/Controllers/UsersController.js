@@ -2,7 +2,7 @@ const { hash, compare } = require('bcryptjs')
 const AppError = require('../Utils/AppError')
 const sqliteConnection = require('../Database/Sqlite')
 const knex = require('../Database/knex')
-const DiskStorage = require('../Providers/DiskStorage')
+const DiskStorage = require('../providers/DiskStorage')
 
 class UsersController {
   async create(req, res) {
